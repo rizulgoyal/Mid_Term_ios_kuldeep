@@ -13,6 +13,10 @@
 		E0638651236A5DB900C7A4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E063864F236A5DB900C7A4D9 /* Main.storyboard */; };
 		E0638653236A5DBA00C7A4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0638652236A5DBA00C7A4D9 /* Assets.xcassets */; };
 		E0638656236A5DBA00C7A4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0638654236A5DBA00C7A4D9 /* LaunchScreen.storyboard */; };
+		E063865E236A5E0200C7A4D9 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063865D236A5E0200C7A4D9 /* Customer.swift */; };
+		E0638660236A607B00C7A4D9 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063865F236A607B00C7A4D9 /* Singleton.swift */; };
+		E0638662236A69C100C7A4D9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0638661236A69C100C7A4D9 /* TableViewController.swift */; };
+		E09E8462236B41B300B2AB93 /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8461236B41B300B2AB93 /* AddCustomerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E0638652236A5DBA00C7A4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0638655236A5DBA00C7A4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0638657236A5DBA00C7A4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E063865D236A5E0200C7A4D9 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		E063865F236A607B00C7A4D9 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		E0638661236A69C100C7A4D9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E09E8461236B41B300B2AB93 /* AddCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				E0638649236A5DB900C7A4D9 /* AppDelegate.swift */,
 				E063864B236A5DB900C7A4D9 /* SceneDelegate.swift */,
-				E063864D236A5DB900C7A4D9 /* ViewController.swift */,
 				E063864F236A5DB900C7A4D9 /* Main.storyboard */,
+				E063864D236A5DB900C7A4D9 /* ViewController.swift */,
 				E0638652236A5DBA00C7A4D9 /* Assets.xcassets */,
 				E0638654236A5DBA00C7A4D9 /* LaunchScreen.storyboard */,
 				E0638657236A5DBA00C7A4D9 /* Info.plist */,
+				E063865D236A5E0200C7A4D9 /* Customer.swift */,
+				E063865F236A607B00C7A4D9 /* Singleton.swift */,
+				E0638661236A69C100C7A4D9 /* TableViewController.swift */,
+				E09E8461236B41B300B2AB93 /* AddCustomerViewController.swift */,
 			);
 			path = Mid_Term_ios;
 			sourceTree = "<group>";
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E063864E236A5DB900C7A4D9 /* ViewController.swift in Sources */,
+				E09E8462236B41B300B2AB93 /* AddCustomerViewController.swift in Sources */,
+				E0638662236A69C100C7A4D9 /* TableViewController.swift in Sources */,
 				E063864A236A5DB900C7A4D9 /* AppDelegate.swift in Sources */,
 				E063864C236A5DB900C7A4D9 /* SceneDelegate.swift in Sources */,
+				E0638660236A607B00C7A4D9 /* Singleton.swift in Sources */,
+				E063865E236A5E0200C7A4D9 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

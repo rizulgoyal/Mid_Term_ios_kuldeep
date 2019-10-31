@@ -8,11 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let gblData = Singleton.getInstance()
+        gblData.createCust()
+        gblData.printdata()
+        let t = gblData.returnCustObject(custID: 1)
+        print(t!.fullName)
+        
+        
+//            let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let temp  = sb.instantiateViewController(identifier: "TableVC") as TViewController
+//        temp.temp1 = gblData
+        
+        
     }
 
 
