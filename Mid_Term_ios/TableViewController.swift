@@ -19,9 +19,32 @@ class TableViewController: UIViewController, UITableViewDelegate,UITableViewData
         customerTable.delegate = self
         customerTable.dataSource = self
         
+        //navigationItem.hidesBackButton=true
+        //allLogOutButton()
+
+        
         
 
         // Do any additional setup after loading the view.
+    }
+//    private func allLogOutButton()
+//        {
+//            let btnLogOut = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(TableViewController.logout(sender:)))
+//    //        navigationItem.leftBarButtonItem = btnLogOut
+//            navigationItem.leftBarButtonItems = [btnLogOut]
+//
+//        }
+    
+//    @objc func logout(sender: UIBarButtonItem)
+//       {
+//           let sb = UIStoryboard(name: "Main", bundle: nil)
+//           let loginVC = sb.instantiateViewController(identifier: "Main") as ViewController
+//           navigationController?.pushViewController(loginVC, animated: true)
+//
+//       }
+    override func viewWillAppear(_ animated: Bool) {
+        customerTable.reloadData()
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,9 +61,19 @@ class TableViewController: UIViewController, UITableViewDelegate,UITableViewData
         cell.textLabel?.text = t1?.fullName
         cell.detailTextLabel?.text = t1?.customerEmail
        return cell
+        
     
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let loginVC = sb.instantiateViewController(identifier: "custDetails") as CustomerDetailsViewController
+        loginVC.cdata = temp1.returnCustObject(custID: indexPath.row + 1)
+        
+        navigationController?.pushViewController(loginVC, animated: true)
+    }
     
     /*
     // MARK: - Navigation

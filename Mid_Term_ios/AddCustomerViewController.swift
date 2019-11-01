@@ -22,6 +22,8 @@ class AddCustomerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+   
+    
     @IBAction func addCustomerButton(_ sender: Any)
     {
         let cFName = custFName.text
@@ -29,11 +31,15 @@ class AddCustomerViewController: UIViewController {
         let cEmail = custEmail.text
         
         temp.addNewCustomer(First_Name: cFName!, Last_Name: cLName!, email: cEmail!)
-        self.performSegue(withIdentifier: "addSuccess", sender: self)
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let secondViewController = storyboard.instantiateViewController(withIdentifier: "TableVC") as UIViewController
-//        navigationController?.pushViewController(secondViewController, animated: true)
-//
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let tableVC = sb.instantiateViewController(identifier: "TableVC") as TableViewController
+//        navigationController?.pushViewController(tableVC, animated: true)
+        
+        
+//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//      let secondViewController = storyboard.instantiateViewController(withIdentifier: "TableVC") as UIViewController
+//      navigationController?.pushViewController(secondViewController, animated: true)
+////  
         
     }
     
